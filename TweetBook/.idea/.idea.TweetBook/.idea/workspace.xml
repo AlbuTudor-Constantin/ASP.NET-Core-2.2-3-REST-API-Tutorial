@@ -9,11 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f72570a-c60f-4c8f-bb8e-e1e94aa0b54a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TweetBook/Contracts/ApiRoutes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/Controllers/V1/PostsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/Domain/Post.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/Installers/DbInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/Installers/IInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/Installers/InstallerExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/Installers/MvcInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Controllers/TestController.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687517341105</updated>
-      <workItem from="1687517342159" duration="1356000" />
+      <workItem from="1687517342159" duration="1962000" />
     </task>
     <servers />
   </component>

@@ -46,6 +46,10 @@ namespace TweetBook
             { 
                 app.UseHsts();
             }
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+
+            app.UseAuthentication();
 
             var swaggerOption = new SwaggerOptions();
             Configuration.GetSection(nameof(SwaggerOptions)).Bind(swaggerOption);
@@ -59,9 +63,6 @@ namespace TweetBook
             {
                 option.SwaggerEndpoint(swaggerOption.UiEndpoint, swaggerOption.Description);
             });
-            
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
 
             app.UseMvc();
         }

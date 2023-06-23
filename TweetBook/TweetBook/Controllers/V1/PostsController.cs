@@ -10,6 +10,7 @@ using TweetBook.Contracts.V1;
 using TweetBook.Contracts.V1.Requests;
 using TweetBook.Contracts.V1.Responses;
 using TweetBook.Domain;
+using TweetBook.Extensions;
 using TweetBook.Services;
 
 namespace TweetBook.Controllers.V1
@@ -46,11 +47,16 @@ namespace TweetBook.Controllers.V1
         public async Task<IActionResult> Update([FromRoute]Guid postId,
             [FromBody] UpdatePostRequest request)
         {
-            var post = new Post
+            var userId = HttpContext.GetUserId();
+            var userOwnsPost = await _postService.UserOwnPostAsync(postId, userId);
+
+            if (!userOwnsPost)
             {
-                Id = postId,
-                Name = request.Name
-            };
+                return BadRequest(new { errors = "You do not own this post" });
+            }
+
+            var post = await _postService.GetPostById(postId);
+            post.Name = request.Name;
 
             var updated = await _postService.UpdatePost(post);
 
@@ -65,6 +71,14 @@ namespace TweetBook.Controllers.V1
         [HttpDelete(ApiRoutes.Post.Delete)]
         public async Task<IActionResult> Delete([FromRoute]Guid postId)
         {
+            var userId = HttpContext.GetUserId();
+            var userOwnPost = await _postService.UserOwnPostAsync(postId, userId);
+
+            if (!userOwnPost)
+            {
+                return BadRequest(new { errors = "You do not own this post" });
+            }
+            
             var deleted = await _postService.DeletePost(postId);
 
             if (!deleted)
@@ -78,7 +92,11 @@ namespace TweetBook.Controllers.V1
         [HttpPost(ApiRoutes.Post.Create)]
         public async Task<IActionResult> Create([FromBody] CreatePostRequest postRequest)
         {
-            var post = new Post { Name = postRequest.Name };
+            var post = new Post
+            {
+                Name = postRequest.Name,
+                UserId = HttpContext.GetUserId()
+            };
             
             await _postService.CreatePost(post);
 

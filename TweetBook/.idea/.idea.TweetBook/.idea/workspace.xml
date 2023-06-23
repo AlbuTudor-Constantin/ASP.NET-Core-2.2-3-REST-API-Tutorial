@@ -9,8 +9,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f72570a-c60f-4c8f-bb8e-e1e94aa0b54a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/Requests/UpdatePostRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Contracts/V1/ApiRoutes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/ApiRoutes.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/Controllers/V1/PostsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Controllers/V1/PostsController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/Services/IPostService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Services/IPostService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/Services/PostService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Services/PostService.cs" afterDir="false" />
@@ -70,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687517341105</updated>
-      <workItem from="1687517342159" duration="4149000" />
+      <workItem from="1687517342159" duration="4481000" />
     </task>
     <servers />
   </component>

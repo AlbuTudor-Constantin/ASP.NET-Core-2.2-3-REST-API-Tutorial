@@ -9,52 +9,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f72570a-c60f-4c8f-bb8e-e1e94aa0b54a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TweetBook/Extensions/GeneralExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/Requests/RefreshTokenRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/Domain/RefreshToken.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/dataSources/f57256d8-7426-4a1d-b930-80de0cfd8b6d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/dataSources/f57256d8-7426-4a1d-b930-80de0cfd8b6d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Controllers/V1/PostsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Controllers/V1/PostsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Contracts/V1/ApiRoutes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/ApiRoutes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Contracts/V1/Responses/AuthSuccessResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/Responses/AuthSuccessResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Controllers/V1/IdentityController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Controllers/V1/IdentityController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Data/DataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Data/DataContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/Data/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Domain/Post.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Domain/Post.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Services/IPostService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Services/IPostService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Services/PostService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Services/PostService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Domain/AuthenticationResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Domain/AuthenticationResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Installers/MvcInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Installers/MvcInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Options/JwtSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Options/JwtSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Services/IIdentityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Services/IIdentityService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Services/IdentityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Services/IdentityService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/app.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/226f226f2ea56571fb40fecbb59c9d51f4f89c11/JwtSecurityTokenHandler.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2RbSYyN0uaA5Sz1JxZxGKfcS1Zh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DataGrid.QuickDoc.View": "TRANSPOSED",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DataGrid.QuickDoc.View&quot;: &quot;TRANSPOSED&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\tudor\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\tudor\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\tudor\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\tudor\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\tudor\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\tudor\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="TweetBook" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/TweetBook/TweetBook.csproj" />
@@ -85,6 +94,7 @@
       <workItem from="1687549324758" duration="751000" />
       <workItem from="1687550095278" duration="53000" />
       <workItem from="1687554550049" duration="5181000" />
+      <workItem from="1687598457026" duration="3574000" />
     </task>
     <servers />
   </component>

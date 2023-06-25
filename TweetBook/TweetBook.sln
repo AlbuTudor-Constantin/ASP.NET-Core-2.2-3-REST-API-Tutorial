@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetBook", "TweetBook\TweetBook.csproj", "{76B2CCF8-233A-42D8-B78E-AC78645F6B00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetBook.IntegrationTest", "TweetBook.IntegrationTest\TweetBook.IntegrationTest.csproj", "{D86D5F3D-4D89-4B7A-9F98-9B8F8AB9DC8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{76B2CCF8-233A-42D8-B78E-AC78645F6B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76B2CCF8-233A-42D8-B78E-AC78645F6B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76B2CCF8-233A-42D8-B78E-AC78645F6B00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D86D5F3D-4D89-4B7A-9F98-9B8F8AB9DC8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D86D5F3D-4D89-4B7A-9F98-9B8F8AB9DC8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D86D5F3D-4D89-4B7A-9F98-9B8F8AB9DC8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D86D5F3D-4D89-4B7A-9F98-9B8F8AB9DC8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

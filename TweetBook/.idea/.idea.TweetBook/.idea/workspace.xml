@@ -9,9 +9,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f72570a-c60f-4c8f-bb8e-e1e94aa0b54a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TweetBook/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook.IntegrationTest/IntegrationTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook.IntegrationTest/PostsControllerTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
     ]
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Launch Settings Profile.TweetBook">
     <configuration name="TweetBook" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/TweetBook/TweetBook.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.2" />
@@ -84,6 +85,7 @@
       <workItem from="1687598457026" duration="3882000" />
       <workItem from="1687629719572" duration="1800000" />
       <workItem from="1687665290961" duration="3084000" />
+      <workItem from="1687697218811" duration="2704000" />
     </task>
     <servers />
   </component>

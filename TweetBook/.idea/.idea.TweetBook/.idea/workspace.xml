@@ -9,21 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f72570a-c60f-4c8f-bb8e-e1e94aa0b54a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/Requests/RefreshTokenRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/Domain/RefreshToken.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/dataSources/f57256d8-7426-4a1d-b930-80de0cfd8b6d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/dataSources/f57256d8-7426-4a1d-b930-80de0cfd8b6d.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Contracts/V1/ApiRoutes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/ApiRoutes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Contracts/V1/Responses/AuthSuccessResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/Responses/AuthSuccessResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Controllers/V1/IdentityController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Controllers/V1/IdentityController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Data/DataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Data/DataContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Data/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Domain/AuthenticationResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Domain/AuthenticationResult.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Installers/MvcInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Installers/MvcInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Options/JwtSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Options/JwtSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Services/IIdentityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Services/IIdentityService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Services/IdentityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Services/IdentityService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/app.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +81,9 @@
       <workItem from="1687549324758" duration="751000" />
       <workItem from="1687550095278" duration="53000" />
       <workItem from="1687554550049" duration="5181000" />
-      <workItem from="1687598457026" duration="3574000" />
+      <workItem from="1687598457026" duration="3882000" />
+      <workItem from="1687629719572" duration="1800000" />
+      <workItem from="1687665290961" duration="3084000" />
     </task>
     <servers />
   </component>

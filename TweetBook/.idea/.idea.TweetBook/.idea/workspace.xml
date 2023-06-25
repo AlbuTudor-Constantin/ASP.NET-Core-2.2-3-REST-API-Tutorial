@@ -9,13 +9,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f72570a-c60f-4c8f-bb8e-e1e94aa0b54a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/Responses/PostsResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/Controllers/V1/TagsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/Domain/Tag.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/dataSources/f57256d8-7426-4a1d-b930-80de0cfd8b6d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/dataSources/f57256d8-7426-4a1d-b930-80de0cfd8b6d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook.IntegrationTest/IntegrationTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook.IntegrationTest/IntegrationTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook.IntegrationTest/TweetBook.IntegrationTest.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook.IntegrationTest/TweetBook.IntegrationTest.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Domain/RefreshToken.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Domain/RefreshToken.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Contracts/V1/ApiRoutes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/ApiRoutes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Contracts/V1/Requests/CreatePostRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/Requests/CreatePostRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Contracts/V1/Responses/PostResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/Responses/PostResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Controllers/V1/PostsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Controllers/V1/PostsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Data/DataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Data/DataContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Data/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Domain/Post.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Domain/Post.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/Installers/MvcInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Installers/MvcInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Services/IPostService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Services/IPostService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Services/IdentityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Services/IdentityService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Services/PostService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Services/PostService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/TweetBook.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/TweetBook.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/app.db" afterDir="false" />
     </list>
@@ -57,7 +66,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.TweetBook">
+  <component name="RunManager">
     <configuration name="TweetBook" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/TweetBook/TweetBook.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.2" />
@@ -92,6 +101,7 @@
       <workItem from="1687665290961" duration="3084000" />
       <workItem from="1687697218811" duration="2704000" />
       <workItem from="1687700384080" duration="1754000" />
+      <workItem from="1687725279147" duration="3605000" />
     </task>
     <servers />
   </component>

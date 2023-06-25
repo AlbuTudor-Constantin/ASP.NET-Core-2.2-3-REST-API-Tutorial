@@ -4,7 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using TweetBook.Contracts.V1;
+using TweetBook.Contracts.V1.Responses;
 using TweetBook.Data;
 using TweetBook.Domain;
 
@@ -19,17 +20,37 @@ namespace TweetBook.Services
             _dataContext = dataContext; 
         }
 
-        public async Task<bool> CreatePost(Post post)
+        public async Task<bool> CreatePost(Post post, List<string> tags)
         {
             await _dataContext.Posts.AddAsync(post);
+
+            foreach (var tag in tags)
+            {
+                await _dataContext.Tags.AddAsync(new Tag
+                {
+                    Name = tag,
+                    PostId = post.Id
+                });
+            }
+
             var created = await _dataContext.SaveChangesAsync();
 
             return created > 0;
         }
 
-        public async Task<List<Post>> GetPosts()
+        public async Task<PostsResponse> GetPosts()
         {
-            return await _dataContext.Posts.ToListAsync();
+            var posts = await _dataContext.Posts.ToListAsync();
+
+            return new PostsResponse
+            {
+                Items = posts.Select(x => new PostResponse
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    Tags = _dataContext.Tags.Where(xx => xx.PostId == x.Id)
+                })
+            };
         }
 
         public async Task<Post> GetPostById(Guid id)
@@ -55,6 +76,11 @@ namespace TweetBook.Services
             }
             
             _dataContext.Posts.Remove(post);
+            var tags = _dataContext.Tags.Where(x => x.PostId == post.Id);
+            foreach (var tag in tags)
+            {
+                _dataContext.Tags.Remove(tag);
+            }
             var deleted = await _dataContext.SaveChangesAsync();
 
             return deleted > 0;
@@ -75,6 +101,11 @@ namespace TweetBook.Services
             }
 
             return true;
+        }
+
+        public async Task<List<Tag>> GetAllTagsAsync()
+        {
+            return await _dataContext.Tags.ToListAsync();
         }
     }
 }

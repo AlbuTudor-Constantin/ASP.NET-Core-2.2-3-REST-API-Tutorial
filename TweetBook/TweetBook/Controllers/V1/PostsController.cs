@@ -97,8 +97,10 @@ namespace TweetBook.Controllers.V1
                 Name = postRequest.Name,
                 UserId = HttpContext.GetUserId()
             };
+
+            var tags = postRequest.Tags.ToList();
             
-            await _postService.CreatePost(post);
+            await _postService.CreatePost(post, tags);
 
             var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";
             var location = baseUrl + "/" + ApiRoutes.Post.Get.Replace("{postId}", post.Id.ToString());

@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Testing;
@@ -12,9 +13,10 @@ using TweetBook.Data;
 
 namespace TweetBook.IntegrationTest
 {
-    public class IntegrationTest
+    public class IntegrationTest : IDisposable
     {
         protected readonly HttpClient TestClient;
+        private readonly IServiceProvider _serviceProvider;
 
         protected IntegrationTest()
         {
@@ -30,6 +32,7 @@ namespace TweetBook.IntegrationTest
                         });
                     });
                 });
+            _serviceProvider = appFactory.Services;
             TestClient = appFactory.CreateClient();
         }
 
@@ -56,6 +59,13 @@ namespace TweetBook.IntegrationTest
             var registrationResponse = await response.Content.ReadAsAsync<AuthSuccessResponse>();
 
             return registrationResponse.Token;
+        }
+
+        public void Dispose()
+        {
+            using var serviceScope = _serviceProvider.CreateScope();
+            var context = serviceScope.ServiceProvider.GetService<DataContext>();
+            context.Database.EnsureDeleted();
         }
     }
 }

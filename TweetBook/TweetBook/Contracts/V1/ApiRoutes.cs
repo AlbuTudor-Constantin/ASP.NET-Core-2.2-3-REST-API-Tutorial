@@ -33,6 +33,8 @@
         public static class Tags
         {
             public const string GetAll = Base + "/tags";
+            
+            public const string Delete = Base + "/tags/{tagId}";
         }
     }
 }

@@ -107,5 +107,20 @@ namespace TweetBook.Services
         {
             return await _dataContext.Tags.ToListAsync();
         }
+
+        public async Task<bool> DeleteTagAsync(Guid id)
+        {
+            var tag = await _dataContext.Tags.SingleOrDefaultAsync(x => x.Id == id);
+
+            if (tag == null)
+            {
+                return false;
+            }
+
+            _dataContext.Tags.Remove(tag);
+            await _dataContext.SaveChangesAsync();
+
+            return true;
+        }
     }
 }

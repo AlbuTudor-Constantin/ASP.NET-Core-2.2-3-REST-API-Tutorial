@@ -23,5 +23,9 @@ namespace TweetBook.Services
         Task<List<Tag>> GetAllTagsAsync();
 
         Task<bool> DeleteTagAsync(Guid id);
+
+        Task<Tag> GetTagAsync(Guid id);
+
+        Task<bool> CreateTagAsync(Tag tag);
     }
 }

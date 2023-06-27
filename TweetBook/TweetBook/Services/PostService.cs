@@ -122,5 +122,18 @@ namespace TweetBook.Services
 
             return true;
         }
+
+        public async Task<Tag> GetTagAsync(Guid id)
+        {
+            return await _dataContext.Tags.SingleOrDefaultAsync(x => x.Id == id);
+        }
+
+        public async Task<bool> CreateTagAsync(Tag tag)
+        {
+            await _dataContext.Tags.AddAsync(tag);
+            var result = await _dataContext.SaveChangesAsync();
+
+            return result > 0;
+        }
     }
 }
